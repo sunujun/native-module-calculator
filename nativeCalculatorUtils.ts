@@ -1,9 +1,9 @@
-import {NativeModules} from 'react-native';
+import { NativeModules } from 'react-native';
 
 export const executeCalculator = (
-  action: 'plus' | 'minus' | 'divide' | 'multiply',
-  numbA: number,
-  numbB: number,
+    action: 'plus' | 'minus' | 'divide' | 'multiply',
+    numbA: number,
+    numbB: number,
 ): Promise<number> => {
-  return NativeModules.CalculatorModule.executeCalc(action, numbA, numbB);
+    return NativeModules.CalculatorModule.executeCalc(action, numbA, numbB);
 };
